@@ -10,5 +10,5 @@ string_stupidify = "0.1.4"
 
 [package.metadata.deb]
 copyright = "2019, Stephan Goeppentin <dedda102@gmail.com>"
-section = "Utilities"
+section = "utility"
 
