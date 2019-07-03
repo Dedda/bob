@@ -1,10 +1,14 @@
 [package]
 name = "bob"
 version = "0.1.0"
-authors = ["Stephan Goeppentin <stephan.goeppentin@adition.com>"]
+authors = ["Stephan Goeppentin <dedda102@gmail.com>"]
 edition = "2018"
 
 [dependencies]
 all_args_string = "0.1.0"
 string_stupidify = "0.1.4"
+
+[package.metadata.deb]
+copyright = "2019, Stephan Goeppentin <dedda102@gmail.com>"
+section = "Utilities"
 
