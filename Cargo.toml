@@ -1,0 +1,10 @@
+[package]
+name = "bob"
+version = "0.1.0"
+authors = ["Stephan Goeppentin <stephan.goeppentin@adition.com>"]
+edition = "2018"
+
+[dependencies]
+all_args_string = "0.1.0"
+string_stupidify = "0.1.4"
+
