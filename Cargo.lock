@@ -17,10 +17,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "bob"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "all_args_string 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "string_stupidify 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "string_stupidify 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -147,7 +147,7 @@ dependencies = [
 
 [[package]]
 name = "string_stupidify"
-version = "0.1.4"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -190,7 +190,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum rand_pcg 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "abf9b09b01790cfe0364f52bf32995ea3c39f4d2dd011eac241d2914146d0b44"
 "checksum rand_xorshift 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "cbf7e9e623549b0e21f6e97cf8ecf247c1a8fd2e8a992ae265314300b2455d5c"
 "checksum rdrand 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "678054eb77286b51581ba43620cc911abf02758c91f93f479767aed0f90458b2"
-"checksum string_stupidify 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)" = "af32b5a804a34934ccac74eebba1a80eba913b40dfb7a4e40c1721f040ab5f64"
+"checksum string_stupidify 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "8720231503736a35498cfd0459f5b1626cf1548e242cb1a163a9d1f0ffdecdf9"
 "checksum winapi 0.3.7 (registry+https://github.com/rust-lang/crates.io-index)" = "f10e386af2b13e47c89e7236a7a14a086791a2b88ebad6df9bf42040195cf770"
 "checksum winapi-i686-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6"
 "checksum winapi-x86_64-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
