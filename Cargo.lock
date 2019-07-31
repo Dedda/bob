@@ -17,7 +17,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "bob"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "all_args_string 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "string_stupidify 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",

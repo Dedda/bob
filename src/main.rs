@@ -6,12 +6,34 @@ use std::env;
 use string_stupidify::decorators::{Alternate, VaporWave, Shuffle, AlphaSort};
 
 fn main() {
-    let (mut decorators, text) = parse_args();
-    if decorators.is_empty() {
-        decorators = vec![Box::new(Alternate)];
+    let args: Vec<String> = env::args().collect();
+    if args.len() <= 1 {
+        help()
+    } else {
+        let (mut decorators, text) = parse_args();
+        if decorators.is_empty() {
+            decorators = vec![Box::new(Alternate)];
+        }
+        let text = text.decorate(&decorators).unwrap();
+        println!("{}", text);
     }
-    let text = text.decorate(&decorators).unwrap();
-    println!("{}", text);
+}
+
+fn help() {
+    println!(
+"Bob version {}
+Usage:
+  $ bob [flags...] [text]
+Possible flags:
+  --bob   Print chars in alternating case
+  --rev   Reverse the text
+  --vap   V A P O R W A V E
+  --ran   Shuffle chars in text randomly
+  --abc   Sort chars in text alphabetically
+  --low   Convert to lower case
+  --big   Convert to upper case
+Flags can be combined and will be applied in the order they are set.",
+    env!("CARGO_PKG_VERSION"));
 }
 
 fn parse_args() -> (Vec<Box<dyn StringDecorator>>, String) {
