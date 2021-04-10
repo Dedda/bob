@@ -13,7 +13,6 @@ lazy_static! {
         let mut map = HashMap::new();
         map.insert("a", "4");
         map.insert("b", "8");
-        map.insert("c", "(");
         map.insert("e", "3");
         map.insert("g", "9");
         map.insert("i", "1");
@@ -26,6 +25,7 @@ lazy_static! {
     };
     static ref LEET_CHARS_VERBOSE: HashMap<&'static str, &'static str> = {
         let mut map = HashMap::new();
+        map.insert("c", "(");
         map.insert("d", "|)");
         map.insert("h", "|-|");
         map.insert("k", "|<");
@@ -97,7 +97,7 @@ fn parse_args() -> (Vec<Box<dyn StringDecorator>>, String) {
     (decorators, text.join(" "))
 }
 
-fn push_optional_decorator(decorators: &mut Vec<Box<StringDecorator>>, name: &Option<String>, args: &Vec<String>) {
+fn push_optional_decorator(decorators: &mut Vec<Box<dyn StringDecorator>>, name: &Option<String>, args: &Vec<String>) {
     match name {
         Some(dec) => {
             match decorator_from_args(&dec, &args) {
